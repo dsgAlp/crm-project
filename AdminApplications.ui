@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>947</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>APPLICATIONS</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QMainWindow { background-color: #fef9e7; }
+
+
+/* GENEL BUTON AYARLARI */
+QPushButton {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    padding: 5px;
+}
+
+/* 1. ARAMA VE FİLTRELER (Mavi Tonları) */
+QPushButton#buttonAra, QPushButton#buttonBasvuru {
+    background-color: #2980b9;
+}
+QPushButton#buttonAra:hover, QPushButton#buttonBasvuru:hover {
+    background-color: #3498db;
+}
+
+/* 2. GÖRÜŞME KAYITLARI (Yeşil Tonları) */
+QPushButton#buttonTanimlanan, QPushButton#buttonTanimlanmayan {
+    background-color: #27ae60;
+}
+QPushButton#buttonTanimlanan:hover, QPushButton#buttonTanimlanmayan:hover {
+    background-color: #2ecc71;
+}
+
+/* 3. KAYIT SORGULAMA (Mor Tonları) */
+QPushButton#buttonOncekiVit, QPushButton#tumBasvurularGetir {
+    background-color: #8e44ad;
+}
+QPushButton#buttonOncekiVit:hover, QPushButton#tumBasvurularGetir:hover {
+    background-color: #9b59b6;
+}
+
+/* 4. KAYIT DURUMLARI (Turuncu Tonları) */
+QPushButton#buttonMukkerrer, QPushButton#buttonFarkli {
+    background-color: #d35400;
+}
+QPushButton#buttonMukkerrer:hover, QPushButton#buttonFarkli:hover {
+    background-color: #e67e22;
+}
+
+/* 5. TERCİHLER (Sarı/Altın Tonları) */
+QPushButton#buttonTercihler {
+    background-color: #f39c12;
+}
+QPushButton#buttonTercihler:hover {
+    background-color: #f1c40f;
+}
+
+/* 6. EXIT (Kırmızı Tonları) */
+QPushButton#buttonExit {
+    background-color: #c0392b;
+}
+QPushButton#buttonExit:hover {
+    background-color: #e74c3c;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>841</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>18</number>
+     </property>
+     <property name="rightMargin">
+      <number>18</number>
+     </property>
+     <item row="0" column="2" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #2c3e50;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: none;
+    padding: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>APPLICATIONS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" rowspan="2">
+      <widget class="QPushButton" name="buttonAra">
+       <property name="text">
+        <string>SEARCH</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="4">
+      <widget class="QLineEdit" name="labelArama">
+       <property name="text">
+        <string>ENTER SEARCH TEXT...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3" rowspan="2" colspan="2">
+      <widget class="QPushButton" name="buttonMukkerrer">
+       <property name="text">
+        <string>DUPLICATE RECORDS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5" rowspan="2">
+      <widget class="QPushButton" name="tumBasvurularGetir">
+       <property name="text">
+        <string>ALL APPLICATIONS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QPushButton" name="buttonTanimlanan">
+       <property name="text">
+        <string>ASSIGNED ADVISOR INTERVIEWS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="buttonOncekiVit">
+       <property name="text">
+        <string>PREVIOUS RECORDS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QPushButton" name="buttonTanimlanmayan">
+       <property name="text">
+        <string>UNASSIGNED ADVISOR INTERVIEWS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2" colspan="2">
+      <widget class="QPushButton" name="buttonBasvuru">
+       <property name="text">
+        <string>APPLICATION FILTERS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QPushButton" name="buttonFarkli">
+       <property name="text">
+        <string>DIFFERENT RECORDS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="QPushButton" name="buttonExit">
+       <property name="text">
+        <string>EXIT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="buttonTercihler">
+       <property name="text">
+        <string>PREFERENCES</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="6">
+      <widget class="QTableWidget" name="tableWidget">
+       <column>
+        <property name="text">
+         <string>Date</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Name Surname</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Mail</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Phone</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Postal Code</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>State</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Current Status</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Economic Status</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>947</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

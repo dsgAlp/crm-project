@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ADMIN ADVISOR</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>19</number>
+    </property>
+    <property name="topMargin">
+     <number>14</number>
+    </property>
+    <property name="rightMargin">
+     <number>19</number>
+    </property>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="buttonExit">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #c0392b;
+    color: white;
+    text-align: left;
+    direction: rtl;
+    padding: 5px;
+    padding-right: 15px; 
+}
+QPushButton:hover { 
+    background-color: #e74c3c; 
+}</string>
+      </property>
+      <property name="text">
+       <string>EXIT</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="3">
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string notr="true">Date</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string notr="true">Name Surname</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string notr="true">Advisor</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string notr="true">IT Knowledge</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string notr="true">Availability</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string notr="true">Notes</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QComboBox" name="boxTercihler">
+      <item>
+       <property name="text">
+        <string>Suitable for full participation in the project.</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suitable for referral to the initial IT training.</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suitable for internship training for the project.</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suitable for referral to another project.</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suitable for direct referral to individual coaching.</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suitable for participation in the next project.</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Should be referred to another sector.</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Other.</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="buttonGorusmeler">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #2980b9;
+    color: white;
+    text-align: left;
+    direction: rtl;
+    padding: 5px;
+    padding-right: 15px; 
+}
+
+QPushButton:hover { 
+    background-color: #3498db; 
+}</string>
+      </property>
+      <property name="text">
+       <string>ALL MEETINGS</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="buttonTercihler">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #f39c12;
+    color: white;
+    text-align: left;
+    direction: rtl;
+    padding: 5px;
+    padding-right: 15px; 
+}
+
+QPushButton:hover { 
+    background-color: #f1c40f; 
+}</string>
+      </property>
+      <property name="text">
+       <string>PREFERENCES</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="buttonAra">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #27ae60;
+    color: white;
+    text-align: left;
+    direction: rtl; 
+    padding: 5px;
+    padding-right: 15px; 
+}
+
+QPushButton:hover { 
+    background-color: #2ecc71; 
+}</string>
+      </property>
+      <property name="text">
+       <string>SEARCH</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="lineArama">
+      <property name="accessibleDescription">
+       <string/>
+      </property>
+      <property name="text">
+       <string>ENTER SEARCH TEXT:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #2c3e50;               
+    font-size: 22px;               
+    font-weight: bold;             
+    font-family: &quot;Segoe UI&quot;, Arial; 
+    background-color: transparent;
+    qproperty-alignment: 'AlignCenter'; 
+}</string>
+      </property>
+      <property name="text">
+       <string>ADMIN ADVISOR MENU:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

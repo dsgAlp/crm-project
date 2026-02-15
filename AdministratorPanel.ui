@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>763</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ADMIN PANEL</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>1003</width>
+        <height>559</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1003</width>
+        <height>559</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#E5E5E5;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #f1c40f;
+color: #ecf0f1;
+font-weight: bold;
+font-size: 16px;
+border: 2px solid #34495e;</string>
+       </property>
+       <property name="text">
+        <string>ADMIN PANEL</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonExit">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>390</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #34495e;
+    background-color: #c0392b;
+    color: white;
+    
+    text-align: left;
+    direction: rtl;
+
+    /* qproperty-iconTextSpacing: 0;  &lt;-- Bu satır silindi (Hata kaynağı) */
+    
+    padding-left: 5px;
+    padding-right: 15px;  
+}
+
+QPushButton:hover {
+    background-color: #e74c3c;
+}
+
+QPushButton:pressed {
+    background-color: #962d22;
+}</string>
+       </property>
+       <property name="text">
+        <string>EXIT</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/exit.png</normaloff>icons/exit.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonApplications">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>140</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Butonun Normal Hali */
+QPushButton {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #9b59b6;
+    border: 1px solid #8e44ad;
+    color: white;
+    padding: 5px;
+}
+
+
+QPushButton:hover {
+    background-color: #e7f1ff;
+    border-color: #b3d7ff;
+    color: #0d6efd;
+}</string>
+       </property>
+       <property name="text">
+        <string>APPLICATIONS</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/resume.png</normaloff>icons/resume.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonAdvisor">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>140</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Normal Hali */
+QPushButton {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #3498db;
+    border: 1px solid #2980b9;
+    color: white;
+}
+
+
+QPushButton:hover {
+    background-color: #2980b9;
+}</string>
+       </property>
+       <property name="text">
+        <string>ADVISOR</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/advisory.png</normaloff>icons/advisory.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonMainMenu">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>390</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #e67e22;
+    border: 1px solid #d35400;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #d35400;
+}
+
+
+QPushButton:pressed {
+    background-color: #ba4a00;
+}</string>
+       </property>
+       <property name="text">
+        <string>MAIN MENU</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/mainmenu.png</normaloff>icons/mainmenu.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonInterview">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>220</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Normal Hali (Yeşil) */
+QPushButton {
+    background-color: #2ecc71;
+    border: 1px solid #27ae60;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    background-color: #27ae60;
+}</string>
+       </property>
+       <property name="text">
+        <string>INTERVIEW</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/interview.png</normaloff>icons/interview.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonAdmin">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>320</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: grey;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+QPushButton:hover {
+    background-color: #999999; 
+    border: 1px solid white; 
+}
+
+
+QPushButton:pressed {
+    background-color: #555555;
+}</string>
+       </property>
+       <property name="text">
+        <string>ADMIN MENU</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/admin.png</normaloff>icons/admin.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGetName">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+        color: #2C3E50; 
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Arial;
+        background-color: #ECF0F1; 
+        padding: 8px 15px;
+        border-bottom-right-radius: 15px; 
+        border-left: 5px solid #3498DB; 
+    }</string>
+       </property>
+       <property name="text">
+        <string>WELCOME</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1440</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAdmin_Panel">
+    <property name="title">
+     <string>Admin Panel</string>
+    </property>
+   </widget>
+   <addaction name="menuAdmin_Panel"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

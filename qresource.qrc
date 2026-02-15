@@ -1,0 +1,10 @@
+<RCC>
+    <qresource>
+        <file>icons/resume.png</file>
+        <file>icons/interview.png</file>
+        <file>icons/advisory.png</file>
+        <file>icons/admin.png</file>
+        <file>icons/mainmenu.png</file>
+        <file>icons/exit.png</file>
+    </qresource>
+</RCC>

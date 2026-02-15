@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>USER PANEL</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #f1c40f;
+color: #ecf0f1;
+font-weight: bold;
+font-size: 16px;
+border: 2px solid #34495e;</string>
+       </property>
+       <property name="text">
+        <string>USER PANEL</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonExit">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>390</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;
+font-weight: bold;
+font-size: 16px;
+border: 2px solid #34495e;
+background-color: #c0392b;
+color: white;
+
+ </string>
+       </property>
+       <property name="text">
+        <string>EXIT</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/exit.png</normaloff>icons/exit.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonUserApplication">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>140</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;
+font-weight: bold;
+font-size: 16px;
+background-color: #9b59b6;
+border: 1px solid #8e44ad;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>APPLICATIONS</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/resume.png</normaloff>icons/resume.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonMentor">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>140</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;
+font-weight: bold;
+font-size: 16px;
+background-color: #3498db;
+border: 1px solid #2980b9;
+color: white;
+hover { background-color: #2980b9; }</string>
+       </property>
+       <property name="text">
+        <string>ADVISOR MEETINGS</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/advisory.png</normaloff>icons/advisory.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonMainMenu">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>390</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;
+font-weight: bold;
+font-size: 16px;
+background-color: #e67e22;
+border: 1px solid #d35400;
+color: white;</string>
+       </property>
+       <property name="text">
+        <string>MAIN MENU</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/mainmenu.png</normaloff>icons/mainmenu.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonInterview">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>250</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2ecc71;
+border: 1px solid #27ae60;
+color: white;
+border-radius: 10px;
+font-weight: bold;
+font-size: 16px;
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>MEETINGS</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/interview.png</normaloff>icons/interview.png</iconset>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGetName">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+        color: #2C3E50; 
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Arial;
+        background-color: #ECF0F1; 
+        padding: 8px 15px;
+        border-bottom-right-radius: 15px; 
+        border-left: 5px solid #3498DB; 
+    }</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
